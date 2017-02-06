@@ -7,11 +7,12 @@ import { StruturalComponent} from './directives/structural.component';
 import { AttrComponent } from './directives/attribute.component';
 import { InteractionComponent } from './ComponentInteraction/outputParam.component',
 import { ExponentialStrengthPipe } from './filters/exponent-length.pipe'
+import { FormComponent } from './ComponentInteraction/FormTemplate/form-template.component'
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule  ],
   declarations: [ AppComponent, FirstComponent, StruturalComponent, AttrComponent
-  , InteractionComponent, ExponentialStrengthPipe ],
+  , InteractionComponent, ExponentialStrengthPipe, FormComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -6,21 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var FormComponent = (function () {
+    function FormComponent() {
     }
-    return AppComponent;
+    return FormComponent;
 }());
-AppComponent = __decorate([
+FormComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<h1>Hello and don't look back </h1>\n  <form-temp></form-temp>\n  "
+        selector: 'form-temp',
+        templateUrl: 'app/ComponentInteraction/FormTemplate/form-template.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/ 
-//# sourceMappingURL=app.component.js.map
+], FormComponent);
+exports.FormComponent = FormComponent;
+//# sourceMappingURL=form-template.component.js.map

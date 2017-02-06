@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `<h1>Hello and don't look back </h1>
-  <attr-comp></attr-comp>`
+  <form-temp></form-temp>
+  `
 })
 export class AppComponent { }
 
