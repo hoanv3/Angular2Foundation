@@ -20,7 +20,8 @@ var FormTemplateComponent = (function () {
 FormTemplateComponent = __decorate([
     core_1.Component({
         selector: 'form-temp',
-        templateUrl: 'app/ComponentInteraction/FormTemplate/form-template.component.html'
+        templateUrl: 'app/ComponentInteraction/FormTemplate/form-template.component.html',
+        styleUrls: ['app/Contents/style.component.css']
     })
 ], FormTemplateComponent);
 exports.FormTemplateComponent = FormTemplateComponent;
