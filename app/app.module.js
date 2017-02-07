@@ -24,7 +24,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         declarations: [app_component_1.AppComponent, first_component_1.FirstComponent, structural_component_1.StruturalComponent, attribute_component_1.AttrComponent,
-            outputParam_component_1.InteractionComponent, exponent_length_pipe_1.ExponentialStrengthPipe, form_template_component_1.FormComponent],
+            outputParam_component_1.InteractionComponent, exponent_length_pipe_1.ExponentialStrengthPipe, form_template_component_1.FormTemplateComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

@@ -23,7 +23,7 @@ export class InteractionComponent {
      */
     public vote(voteOption: Boolean) {
         this.isVoted = voteOption;
-        this.onVoted.emit(voteOption;
+        this.onVoted.emit(voteOption);
     }
 
     /**

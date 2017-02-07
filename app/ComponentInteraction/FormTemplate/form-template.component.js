@@ -6,16 +6,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var FormComponent = (function () {
-    function FormComponent() {
+var FormTemplateComponent = (function () {
+    function FormTemplateComponent() {
     }
-    return FormComponent;
+    /**
+     * submit
+     */
+    FormTemplateComponent.prototype.onSubmit = function (frmValues) {
+        console.log(frmValues);
+    };
+    return FormTemplateComponent;
 }());
-FormComponent = __decorate([
+FormTemplateComponent = __decorate([
     core_1.Component({
         selector: 'form-temp',
         templateUrl: 'app/ComponentInteraction/FormTemplate/form-template.component.html'
     })
-], FormComponent);
-exports.FormComponent = FormComponent;
+], FormTemplateComponent);
+exports.FormTemplateComponent = FormTemplateComponent;
 //# sourceMappingURL=form-template.component.js.map
