@@ -3,7 +3,20 @@
 <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
     <div class="form-group">
         <label for="">Name</label>
-        <input type="text" class="form-control" name="name" ngModel />
+        <input type="text" class="form-control" name="name" #name="ngModel"  required minlength="3" 
+        maxlength="10" ngModel/>
+
+        <div *ngIf="name.errors && (name.dirty || name.touched)" class="alert alert-danger">
+            <div [hidden]="!name.errors.required">
+                Name is required
+            </div>
+            <div [hidden]="!name.errors.minlength">
+                The name length must be at least 3 characters
+            </div>
+            <div [hidden]="!name.errors.maxlength">
+                The name length cannot be greater than  10 characters
+            </div>
+        </div>
     </div>
     <div ngModelGroup="address">
         <div class="form-group">
