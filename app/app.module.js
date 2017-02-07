@@ -14,6 +14,7 @@ var structural_component_1 = require("./directives/structural.component");
 var attribute_component_1 = require("./directives/attribute.component");
 var outputParam_component_1 = require("./ComponentInteraction/outputParam.component");
 var exponent_length_pipe_1 = require("./filters/exponent-length.pipe");
+var form_template_component_1 = require("./ComponentInteraction/FormTemplate/form-template.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -23,7 +24,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         declarations: [app_component_1.AppComponent, first_component_1.FirstComponent, structural_component_1.StruturalComponent, attribute_component_1.AttrComponent,
-            outputParam_component_1.InteractionComponent, exponent_length_pipe_1.ExponentialStrengthPipe],
+            outputParam_component_1.InteractionComponent, exponent_length_pipe_1.ExponentialStrengthPipe, form_template_component_1.FormTemplateComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
