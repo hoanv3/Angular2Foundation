@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello and don't look back </h1>
-  <form-temp></form-temp>
-  `
+  template: `<h1>Hello and don't look back </h1`
 })
 export class AppComponent { }
 

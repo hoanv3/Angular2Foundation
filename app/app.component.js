@@ -14,7 +14,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello and don't look back </h1>\n  <form-temp></form-temp>\n  "
+        template: "<h1>Hello and don't look back </h1"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
