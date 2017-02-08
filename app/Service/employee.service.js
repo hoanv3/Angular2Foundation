@@ -6,21 +6,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var EmployeeService = (function () {
+    function EmployeeService() {
     }
-    return AppComponent;
+    /**
+     * GetEmployeeData
+     */
+    EmployeeService.prototype.GetEmployeeData = function () {
+        var employeeList = [
+            { Id: 1, Name: 'Steven Nguyen' },
+            { Id: 2, Name: 'Luna Vu' },
+            { Id: 3, Name: 'Steve Job' }
+        ];
+        return employeeList;
+    };
+    return EmployeeService;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        templateUrl: 'app/app.component.html'
-    })
-], AppComponent);
-exports.AppComponent = AppComponent;
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/ 
-//# sourceMappingURL=app.component.js.map
+EmployeeService = __decorate([
+    core_1.Injectable()
+], EmployeeService);
+exports.EmployeeService = EmployeeService;
+//# sourceMappingURL=employee.service.js.map
