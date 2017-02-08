@@ -1,17 +1,25 @@
 import { Injectable } from '@angular/core';
+import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class EmployeeService {
+    private apiUrl = "http://localhost:57890/api/Data/GetAllStudents";
+
+    /**
+     * constructor
+     */
+    constructor(private _http : Http) {
+
+    }
+
     /**
      * GetEmployeeData
      */
-    public GetEmployeeData(): any {
-        let employeeList: any[] = [
-            { Id: 1, Name: 'Steven Nguyen' },
-            { Id: 2, Name: 'Luna Vu' },
-            { Id: 3, Name: 'Steve Job' }
-        ];
-
-        return employeeList;
+    public GetEmployeeData(): Observable<any[]> {
+        let data = this._http.get(this.apiUrl)
+        .map((response: Response) => response.json());
+        return data;
     }
 }

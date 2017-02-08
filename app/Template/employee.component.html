@@ -1,6 +1,17 @@
-<ul>
-    <li *ngFor="let emp of employeeList">
-        <strong>{{ emp.Id }}</strong>
-        <p>{{ emp.Name }}</p>
-    </li>
-</ul>
+<table class="table table-inverse table-responsive">
+    <thead>
+        <tr>
+            <td>Student Code</td>
+            <td>Student Name</td>
+            <td>IDIssuePlace</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employeeList">
+            <td>{{ emp.StudentCode }}</td>
+            <td>{{ emp.StudentName }}</td>
+            <td>{{ emp.IDIssuePlace }}</td>
+        </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>

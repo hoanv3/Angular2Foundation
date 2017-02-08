@@ -21,7 +21,11 @@ var EmployeeComponent = (function () {
      * name
      */
     EmployeeComponent.prototype.ngOnInit = function () {
-        this.employeeList = this.employeeSvc.GetEmployeeData();
+        var _this = this;
+        this.employeeSvc.GetEmployeeData().subscribe(function (response) {
+            console.log(response);
+            _this.employeeList = response;
+        });
     };
     return EmployeeComponent;
 }());
